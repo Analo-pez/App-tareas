@@ -1,0 +1,60 @@
+@import './styles/vars';
+
+.prueba2 {
+  background-image: url('./back3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px;
+  height: 100vh;
+}
+.page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  &__table{
+    background-color: $color-dark;
+    color: $color-ligth;
+    border: 2px dashed  $color-luminous;
+    padding: 20px;
+    margin: 30px;
+    &--head{
+      text-transform: uppercase;
+    }
+  }
+}
+
+.banner__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ font-size: 30px;
+ text-transform: uppercase;
+ padding: 30px;
+ background-color: yellow;
+ box-shadow: 10px 5px 5px $color-luminous;
+&--sub{
+  text-transform: capitalize;
+  color: blue;
+}
+&--sub1{
+  color: black;
+}
+}
+
+.visibility{
+  margin: 20px;
+  &__label{
+    color: $color-ligth;
+  }
+}
+
+.tasks{
+  &__btn{
+    margin-left: 10px;
+    background-color: $color-dark;
+    color: $color-ligth;
+  }
+}
