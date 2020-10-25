@@ -46,19 +46,6 @@ const App = () => {
   }
 
 
-  //CREAR FUNCIONALIDAD PARA ELIMINAR TAREAS INDIVIDUALES
-  // let deleteTaskList = [];
-  // const deleteTask = ev => {
-  //   let clicked = ev.currentTarget.id;
-  //   let clickedIndex = taskItems.findIndex(t => t.name === clicked);
-  //   setTaskItems(taskItems.splice(clickedIndex, 1));
-  //   deleteTaskList.push(clicked)
-  //   console.log(clicked, taskItems)
-  //   console.log(deleteTaskList, clickedIndex)
-  // }
-
-
-
   // FUNCIÓN PARA MODIFICAR CHECKED TRUE/FALSE
   const toggleTask = task =>
     setTaskItems(taskItems.map(t =>
@@ -71,7 +58,6 @@ const App = () => {
     taskItems.filter(task => task.done === doneValue)
       .map(task => (
         <TaskRow task={task} key={task.name} toggleTask={toggleTask} />
-        // callbackDelete={deleteTask}  meter en etiqueta TaskRow
       ))
 
 
